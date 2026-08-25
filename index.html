@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#667eea">
+  <title>A Little Something for You 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--
+    HAYLEA PICK-ME-UP
+    ---------------------------------------------------------
+    This page is intentionally simple so you can experiment.
+
+    Main files:
+      index.html  = page structure / words
+      style.css   = appearance / layout / animations
+      script.js   = messages / randomization / photos
+
+    Put your own images inside the "photos" folder and add
+    their filenames to the photos array in script.js.
+  -->
+
+  <!-- Background image layer -->
+  <div id="background" class="background" aria-hidden="true"></div>
+  <div class="background-overlay" aria-hidden="true"></div>
+
+  <main class="app">
+    <div class="sparkles" aria-hidden="true">✦　·　✧　·　✦</div>
+
+    <section id="card" class="card" aria-live="polite">
+      <div class="tiny-label">A little something for you</div>
+
+      <div id="emoji" class="emoji">💙</div>
+
+      <p id="category" class="category">FOR TODAY</p>
+
+      <h1 id="message">Loading something for you...</h1>
+
+      <p id="subtext" class="subtext">
+        Take a breath. You don't have to figure everything out at once.
+      </p>
+
+      <button id="another" type="button">
+        ✨ Give me another
+      </button>
+
+      <div class="hint">
+        Tap the card again anytime.
+      </div>
+    </section>
+
+    <footer>
+      Made to put a little light into a difficult day.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
