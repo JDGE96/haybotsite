@@ -105,7 +105,7 @@ const messages = [
   {
     category: "YOU'VE GOT THIS",
     emoji: "💪",
-    text: "A bad day is not a bad life.",
+    text: "Today might be bad, but tomorrow could be better",
     subtext: "Tomorrow gets another chance."
   },
 
@@ -129,7 +129,7 @@ const messages = [
      ---------------------------------------------------------- */
 
   {
-    category: "IMPORTANT NEWS",
+    category: "ALERT",
     emoji: "🚨",
     text: "This is your official reminder to stop bullying yourself.",
     subtext: "There is already enough negativity on the internet."
@@ -139,13 +139,13 @@ const messages = [
     category: "MEDICAL ADVICE",
     emoji: "🩺",
     text: "You appear to have a severe case of needing snacks.",
-    subtext: "Treatment: acquire snacks immediately."
+    subtext: "Treatment: Chex Mix with a side of M&Ms"
   },
 
   {
     category: "BREAKING NEWS",
     emoji: "📰",
-    text: "Local woman remains ridiculously awesome despite questionable decisions.",
+    text: "Local woman remains silly goose, but decides to bark at local authorities",
     subtext: "More at 11."
   },
 
@@ -153,7 +153,7 @@ const messages = [
     category: "VERY SERIOUS",
     emoji: "🐸",
     text: "If everything feels overwhelming, imagine a frog wearing a tiny hat.",
-    subtext: "You're welcome."
+    subtext: "Hes a fancy frog"
   },
 
   {
@@ -224,7 +224,24 @@ const messages = [
     category: "FROM SOMEONE ROOTING FOR YOU",
     emoji: "💙",
     text: "Whatever today looks like, I hope you remember that someone is genuinely rooting for you.",
-    subtext: "No expectations. Just a reminder."
+    subtext: "No expectations. Just a reminder. From me"
+  },
+
+  {
+    category: "ONE MORE THING",
+    emoji: "🥹",
+    text: "I hope you find at least one reason to smile today.",
+    subtext: "And if not, come back and try again tomorrow."
+  },
+
+    /* ----------------------------------------------------------
+     🥹 Fox-and-Wolf
+     ---------------------------------------------------------- */
+ {
+    category: "FROM SOMEONE ROOTING FOR YOU",
+    emoji: "💙",
+    text: "Whatever today looks like, I hope you remember that someone is genuinely rooting for you.",
+    subtext: "No expectations. Just a reminder. From me"
   },
 
   {
