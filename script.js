@@ -52,7 +52,7 @@ const photos = [
   "photos/BabyDriver.jpg",
   "photos/fnaf.jpg",
   "photos/fox1.jpg",
-  "photos/stardewvalley.jpeg"
+  "photos/stardewvalley.jpeg",
 
   // Add your own photos here:
   // "photos/sunset.jpg",
