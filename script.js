@@ -283,10 +283,24 @@ const messages = [
      🥹 Fox-and-Wolf
      ---------------------------------------------------------- */
  {
-    category: "FROM SOMEONE ROOTING FOR YOU",
-    emoji: "💙",
-    text: "Whatever today looks like, I hope you remember that someone is genuinely rooting for you.",
-    subtext: "No expectations. Just a reminder. From me"
+    category: "REMINDER",
+    emoji: "🌂",
+    text: "You will always have someone here by your side, through every major problem",
+    subtext: "🫡 Major Problem 🫡"
+  },
+
+  {
+    category: "IM HERE",
+    emoji: "🐺",
+    text: "This is your sign to call/message to feel better",
+    subtext: "I Love you, ok?"
+  },
+
+  {
+    category: "COULD BE WORSE",
+    emoji: "🏕️",
+    text: "You think your day is going bad?",
+    subtext: "Be happy you are not a man camping in secret"
   },
 
   {
@@ -301,20 +315,6 @@ const messages = [
     emoji: "",
     text: "",
     subtext: ""
-  },
-
-  {
-    category: "",
-    emoji: "",
-    text: "",
-    subtext: ""
-  },
-
-  {
-    category: "ONE MORE THING",
-    emoji: "🥹",
-    text: "I hope you find at least one reason to smile today.",
-    subtext: "And if not, come back and try again tomorrow."
   }
 
 ];
