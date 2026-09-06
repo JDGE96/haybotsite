@@ -53,6 +53,13 @@ const photos = [
   "photos/fnaf.jpg",
   "photos/fox1.jpg",
   "photos/stardewvalley.jpeg",
+  "photos/CobraKai.jpg",
+  "photos/HIMYM1.jpg",
+  "photos/HIMYM2.jpg",
+  "photos/HIMYM3.jpg",
+  "photos/HIMYM4.jpg",
+  "photos/JohnWick.jpg",
+  "photos/ST.jpg",
 
   // Add your own photos here:
   // "photos/sunset.jpg",
@@ -96,7 +103,7 @@ const messages = [
     category: "A LITTLE REMINDER",
     emoji: "💙",
     text: "You are doing better than you think you are.",
-    subtext: "Give yourself some credit. Seriously."
+    subtext: "I'm always rooting for you"
   },
 
   {
@@ -116,8 +123,8 @@ const messages = [
   {
     category: "FOR YOU",
     emoji: "✨",
-    text: "You are allowed to rest without feeling guilty about it.",
-    subtext: "Rest is not giving up."
+    text: "You are never alone you will always have someone in your corner",
+    subtext: "I'll always be here for you"
   },
 
   {
@@ -133,13 +140,6 @@ const messages = [
      ---------------------------------------------------------- */
 
   {
-    category: "ALERT",
-    emoji: "🚨",
-    text: "This is your official reminder to stop bullying yourself.",
-    subtext: "There is already enough negativity on the internet."
-  },
-
-  {
     category: "MEDICAL ADVICE",
     emoji: "🩺",
     text: "You appear to have a severe case of needing snacks.",
@@ -149,7 +149,7 @@ const messages = [
   {
     category: "BREAKING NEWS",
     emoji: "📰",
-    text: "Local woman remains silly goose, but decides to bark at local authorities",
+    text: "Local woman remains silly goose, and its needed back at the pond",
     subtext: "More at 11."
   },
 
@@ -165,6 +165,13 @@ const messages = [
     emoji: "😂",
     text: "You have survived 100% of your worst days so far.",
     subtext: "That's a pretty impressive win rate."
+  },
+
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
   },
 
 
@@ -193,6 +200,19 @@ const messages = [
     subtext: "Don't underestimate that."
   },
 
+  {
+    category: "CHERISHED",
+    emoji: "💕",
+    text: "You are valued and loved by many",
+    subtext: "I will always appreciate even if you dont believe it"
+  },
+
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
+  },
 
   /* ----------------------------------------------------------
      ✝️ FAITH
@@ -238,6 +258,27 @@ const messages = [
     subtext: "And if not, come back and try again tomorrow."
   },
 
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
+  },
+
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
+  },
+
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
+  },
+
     /* ----------------------------------------------------------
      🥹 Fox-and-Wolf
      ---------------------------------------------------------- */
@@ -246,6 +287,27 @@ const messages = [
     emoji: "💙",
     text: "Whatever today looks like, I hope you remember that someone is genuinely rooting for you.",
     subtext: "No expectations. Just a reminder. From me"
+  },
+
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
+  },
+
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
+  },
+
+  {
+    category: "",
+    emoji: "",
+    text: "",
+    subtext: ""
   },
 
   {
