@@ -304,17 +304,17 @@ const messages = [
   },
 
   {
-    category: "",
-    emoji: "",
-    text: "",
-    subtext: ""
+    category: "LEGENDARY",
+    emoji: "🤵",
+    text: "Things could be Legend..",
+    subtext: "Wait for it..."
   },
 
   {
-    category: "",
-    emoji: "",
-    text: "",
-    subtext: ""
+    category: "YOU CAN DO IT",
+    emoji: "🏒",
+    text: "Just know it is always possible, you can do it",
+    subtext: "HELL YEAH, FUCK YEAH"
   }
 
 ];
