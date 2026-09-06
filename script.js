@@ -167,12 +167,14 @@ const messages = [
     subtext: "That's a pretty impressive win rate."
   },
 
-  {
+  /*
+   {
     category: "",
     emoji: "",
     text: "",
     subtext: ""
   },
+  /*
 
 
   /* ----------------------------------------------------------
@@ -208,10 +210,10 @@ const messages = [
   },
 
   {
-    category: "",
-    emoji: "",
-    text: "",
-    subtext: ""
+    category: "HUMBLE YOURSELF",
+    emoji: "🥘",
+    text: "You are NOT a man that owns 5 Ovens",
+    subtext: "So always strive to be better!"
   },
 
   /* ----------------------------------------------------------
@@ -259,17 +261,17 @@ const messages = [
   },
 
   {
-    category: "",
-    emoji: "",
-    text: "",
-    subtext: ""
+    category: "CHIN UP",
+    emoji: "☕",
+    text: "Keep your head up high,  you got this",
+    subtext: "Your name could be Swarly after all"
   },
 
   {
-    category: "",
-    emoji: "",
-    text: "",
-    subtext: ""
+    category: "REMEBER",
+    emoji: "🥋",
+    text: "You wanna take this inside??",
+    subtext: "I COULD EAT 👺"
   },
 
   {
