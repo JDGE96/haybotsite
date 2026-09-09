@@ -82,11 +82,6 @@ const photos = [
    ============================================================ */
 
 const spotifyTracks = [
-  {
-    title: "Don't Go In The Forest",
-    artist: "Avatar",
-    url: "https://open.spotify.com/track/62JAxMtxSgFMUlBgjmi23H"
-  },
   
 /*
 
@@ -97,19 +92,113 @@ const spotifyTracks = [
   },
 
 */
+/* AVATAR */
+  {
+    title: "Don't Go In The Forest",
+    artist: "Avatar",
+    url: "https://open.spotify.com/track/62JAxMtxSgFMUlBgjmi23H"
+  },
+  
+  {
+    title: "Bloody Angel",
+    artist: "Avatar",
+    url: "https://open.spotify.com/track/2cQkslUQT9nyvmMNTftd4S?si=c514b6880a0d4cfa"
+  },
+  
+  {
+    title: "Let It Burn",
+    artist: "Avatar",
+    url: "https://open.spotify.com/track/0tPkGeymvg02oRCbrEHr2l?si=bcfe298f80b14554"
+  },
 
+  {
+    title: "Hail the Apocalypse",
+    artist: "Avatar",
+    url: "https://open.spotify.com/track/0PMxzdeOobkZzeSGVV8jo9?si=7b3d9dd754db4e13"
+  },
+
+/* METALLICA */
   {
     title: "One",
     artist: "Metallica",
     url: "https://open.spotify.com/track/0LAcM6I7ijW4VVW0aytl1t?si=d17a4c6362fb4a03"
   },
+  
+  {
+    title: "For Whom The Bell Tolls (Remastered)",
+    artist: "Metallica",
+    url: "https://open.spotify.com/track/51YZAJhOwIC5Gg3jMbAmhZ"
+  },
 
+ /* AVENGED SEVENFOLD */
   {
     title: "A Little Piece of Heaven",
     artist: "Avenged Sevenfold",
     url: "https://open.spotify.com/track/1BLfQ6dPXmuDrFmbdfW7Jl?si=39149737142f4e2a"
   },
 
+/* THE HEATHERS */
+
+  {
+    title: "Freeze Your Brain",
+    artist: "Kevin Murphy, Laurence O'Keefe, Barrett Wilbert Weed, Ryan McCartan",
+    url: "https://open.spotify.com/track/1IKnbVLnSCwOPFAurjs0vc"
+  },
+
+  {
+    title: "Big Fun",
+    artist: "Kevin Murphy, Laurence O'Keefe, Barrett Wilbert Weed, Ryan McCartan",
+    url: "https://open.spotify.com/track/2UXnpMyr1l7OixcCtT6dJK?si=75ef198bdd04454b"
+  },
+
+/* BADFLOWER */
+
+
+
+/* GHOST */
+
+  {
+    title: "Mary On A Cross",
+    artist: "Ghost",
+    url: "https://open.spotify.com/track/2HZLXBOnaSRhXStMLrq9fD?si=88c619fd6b4d473c"
+  },
+
+  {
+    title: "Absolution",
+    artist: "Ghost",
+    url: "https://open.spotify.com/track/74CoPm5QmWUk8tne5GfMRc?si=6ec2d83833734a31"
+  },
+
+
+/* HOLLYWOOD UNDEAD */
+
+  {
+    title: "Everywhere I Go",
+    artist: "Hollywood Undead",
+    url: "https://open.spotify.com/track/1czaCgWLWgqp0eRIZ0BcXh?si=fe93842621214b17"
+  },
+
+  {
+    title: "Riot",
+    artist: "Hollywood Undead",
+    url: "https://open.spotify.com/track/5toE2GI4iMIpelQtzKNT9Q?si=bb9e8bc5048e4cd0"
+  },
+
+/* THREE DAYS GRACE */
+
+  {
+    title: "Never Too Late",
+    artist: "Three Days Grace",
+    url: "https://open.spotify.com/track/0p1E3mQ8j5L1AMGuvGoYRR?si=b8351cadb530411c"
+  },
+
+  {
+    title: "Break",
+    artist: "Three Days Grace",
+    url: "https://open.spotify.com/track/4urxRqBRiaH0i20OKBsgxc?si=16d6be8ce7d744d4"
+  },
+
+/* OTHERS */  
   {
     title: "You're Gonna Go Far, Kid",
     artist: "The Offspring",
@@ -122,30 +211,6 @@ const spotifyTracks = [
     url: "https://open.spotify.com/track/4mKlzy0qaK1c2Qw5e2VqpF?si=a98f3c4b7ba14afd"
   },
 
-  {
-    title: "Hollywood Undead",
-    artist: "Everywhere I Go",
-    url: "https://open.spotify.com/track/1czaCgWLWgqp0eRIZ0BcXh?si=fe93842621214b17"
-  },
-
-
-  {
-    title: "Mary On A Cross",
-    artist: "Ghost",
-    url: "https://open.spotify.com/track/2HZLXBOnaSRhXStMLrq9fD?si=88c619fd6b4d473c"
-  },
-  
-  {
-    title: "Freeze Your Brain",
-    artist: "Kevin Murphy, Laurence O'Keefe, Barrett Wilbert Weed, Ryan McCartan",
-    url: "https://open.spotify.com/track/1IKnbVLnSCwOPFAurjs0vc"
-  },
-  
-  {
-    title: "For Whom The Bell Tolls (Remastered)",
-    artist: "Metallica",
-    url: "https://open.spotify.com/track/51YZAJhOwIC5Gg3jMbAmhZ"
-  },
 ];
 
 
