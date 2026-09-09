@@ -484,6 +484,7 @@ const messages = [
 
 let lastMessageIndex = -1;
 let lastPhotoIndex = -1;
+let lastSpotifyIndex = -1;
 
 
 /* ============================================================
