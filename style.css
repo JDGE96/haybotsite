@@ -287,6 +287,25 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+.spotify-button {
+  margin-top: 12px;
+  background: linear-gradient(135deg, #1db954, #159447);
+  box-shadow: 0 9px 25px rgba(29, 185, 84, 0.25);
+}
+
+.spotify-button:hover {
+  box-shadow: 0 12px 30px rgba(29, 185, 84, 0.34);
+}
+
+.spotify-result {
+  margin: 14px auto 0;
+  max-width: 560px;
+  color: #596078;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  min-height: 1.4em;
+}
+
 .hint {
   margin-top: 18px;
 

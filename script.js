@@ -71,6 +71,87 @@ const photos = [
 
 
 /* ============================================================
+   3. SPOTIFY SONGS
+   ============================================================
+
+   Add Spotify tracks here.
+
+   To add another song later, copy one of the blocks below
+   and replace the title, artist, and Spotify URL.
+   The button will randomly choose from this list.
+   ============================================================ */
+
+const spotifyTracks = [
+  {
+    title: "Don't Go In The Forest",
+    artist: "Avatar",
+    url: "https://open.spotify.com/track/62JAxMtxSgFMUlBgjmi23H"
+  },
+  
+/*
+
+  {
+    title: "",
+    artist: "",
+    url: ""
+  },
+
+*/
+
+  {
+    title: "One",
+    artist: "Metallica",
+    url: "https://open.spotify.com/track/0LAcM6I7ijW4VVW0aytl1t?si=d17a4c6362fb4a03"
+  },
+
+  {
+    title: "A Little Piece of Heaven",
+    artist: "Avenged Sevenfold",
+    url: "https://open.spotify.com/track/1BLfQ6dPXmuDrFmbdfW7Jl?si=39149737142f4e2a"
+  },
+
+  {
+    title: "You're Gonna Go Far, Kid",
+    artist: "The Offspring",
+    url: "https://open.spotify.com/track/6TfBA04WJ3X1d1wXhaCFVT?si=d8d2814d480c4625"
+  },
+
+    {
+    title: "Killer Queen",
+    artist: "Queen",
+    url: "https://open.spotify.com/track/4mKlzy0qaK1c2Qw5e2VqpF?si=a98f3c4b7ba14afd"
+  },
+
+  {
+    title: "Hollywood Undead",
+    artist: "Everywhere I Go",
+    url: "https://open.spotify.com/track/1czaCgWLWgqp0eRIZ0BcXh?si=fe93842621214b17"
+  },
+
+
+  {
+    title: "Mary On A Cross",
+    artist: "Ghost",
+    url: "https://open.spotify.com/track/2HZLXBOnaSRhXStMLrq9fD?si=88c619fd6b4d473c"
+  },
+  
+  {
+    title: "Freeze Your Brain",
+    artist: "Kevin Murphy, Laurence O'Keefe, Barrett Wilbert Weed, Ryan McCartan",
+    url: "https://open.spotify.com/track/1IKnbVLnSCwOPFAurjs0vc"
+  },
+  
+  {
+    title: "For Whom The Bell Tolls (Remastered)",
+    artist: "Metallica",
+    url: "https://open.spotify.com/track/51YZAJhOwIC5Gg3jMbAmhZ"
+  },
+];
+
+
+
+
+/* ============================================================
    2. YOUR MESSAGES
    ============================================================
 
@@ -268,7 +349,7 @@ const messages = [
   },
 
   {
-    category: "REMEBER",
+    category: "REMEMBER",
     emoji: "🥋",
     text: "You wanna take this inside??",
     subtext: "I COULD EAT 👺"
@@ -312,6 +393,14 @@ const messages = [
     emoji: "🤵",
     text: "Things could be Legend..",
     subtext: "Wait for it..."
+  },
+
+  {
+    category: "A LITTLE LAUGH",
+    emoji: "🧁",
+    text: "I like you",
+    subtext: "Have a cupcake!"
+
   },
 
   {
@@ -439,8 +528,54 @@ function changeBackground() {
 }
 
 
+
 /* ============================================================
-   8. DISPLAY A NEW MESSAGE
+   8. SPOTIFY RANDOM SONG
+   ============================================================ */
+
+function getRandomSpotifyTrack() {
+
+  let index;
+
+  do {
+    index = randomIndex(spotifyTracks);
+  }
+
+  while (
+    spotifyTracks.length > 1 &&
+    index === lastSpotifyIndex
+  );
+
+  lastSpotifyIndex = index;
+
+  return spotifyTracks[index];
+}
+
+
+function pickSpotifySong() {
+
+  if (spotifyTracks.length === 0) {
+    return;
+  }
+
+  const song = getRandomSpotifyTrack();
+
+  document.getElementById("spotifyResult").textContent =
+    `🎵 ${song.title} — ${song.artist}`;
+
+  /*
+    Opening the normal Spotify track URL lets Spotify
+    handle the link. If the Spotify app is installed,
+    the device/browser may hand the link to the app.
+    Otherwise it opens Spotify on the web.
+  */
+
+  window.open(song.url, "_blank");
+}
+
+
+/* ============================================================
+   9. DISPLAY A NEW MESSAGE
    ============================================================ */
 
 function showMessage() {
@@ -492,7 +627,7 @@ function showMessage() {
 
 
 /* ============================================================
-   9. BUTTON
+   10. BUTTON
    ============================================================
 
    When the button is clicked:
@@ -509,9 +644,19 @@ document
     showMessage
   );
 
+  
+/*
+   Spotify button: pick a random song and open it in Spotify.
+*/
+document
+  .getElementById("spotifyRandom")
+  .addEventListener(
+    "click",
+    pickSpotifySong
+  );
 
 /* ============================================================
-   10. FIRST LOAD
+   11. FIRST LOAD
    ============================================================
 
    Show a random message and photo immediately when the
