@@ -492,6 +492,14 @@ const messages = [
   },
 
   {
+    category: "A LAUGH",
+    emoji: "🚗",
+    text: "Keep today happy!",
+    subtext: "You could be angeryly skipping 🎵the Walker🎵 in your car right now"
+
+  }, 
+  
+  {
     category: "YOU CAN DO IT",
     emoji: "🏒",
     text: "Just know it is always possible, you can do it",
