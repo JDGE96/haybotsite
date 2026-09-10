@@ -200,6 +200,12 @@ const spotifyTracks = [
 
 /* OTHERS */  
   {
+    title: "The Walker",
+    artist: "Fitz and The Tantrums",
+    url: "https://open.spotify.com/track/0Nk7bSn0MItonkR0GNs3mj?si=9abc1a622d764620"
+  },  
+
+  {
     title: "You're Gonna Go Far, Kid",
     artist: "The Offspring",
     url: "https://open.spotify.com/track/6TfBA04WJ3X1d1wXhaCFVT?si=d8d2814d480c4625"
