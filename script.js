@@ -69,6 +69,15 @@ const photos = [
   // "photos/rollercoaster.jpg",
 ];
 
+// ==========================================
+// 💌 MESSAGE FOR HAYLEA
+// Change this message whenever you want.
+// ==========================================
+
+const specialMessage = {
+  title: "A Little Message",
+  message: "Hey you. Just wanted you to know that someone is rooting for you today. ❤️"
+};
 
 /* ============================================================
    3. SPOTIFY SONGS
@@ -677,6 +686,9 @@ function showMessage() {
   */
 
   changeBackground();
+
+  document.getElementById("specialTitle").textContent = specialMessage.title;
+  document.getElementById("specialText").textContent = specialMessage.message;
 
 
   /*
