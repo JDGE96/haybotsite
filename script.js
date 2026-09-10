@@ -75,8 +75,8 @@ const photos = [
 // ==========================================
 
 const specialMessage = {
-  title: "A Little Message",
-  message: "Hey you. Just wanted you to know that someone is rooting for you today. ❤️"
+  title: "A message from Wolf",
+  message: "I may not be around, but im there with you, in this card, always🐺"
 };
 
 /* ============================================================
