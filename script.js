@@ -484,6 +484,14 @@ const messages = [
   },
 
   {
+    category: "A VISTOR",
+    emoji: "😾",
+    text: "YOU HAVE SOMEONE VISITING",
+    subtext: "It's Nermal"
+
+  },
+
+  {
     category: "YOU CAN DO IT",
     emoji: "🏒",
     text: "Just know it is always possible, you can do it",
