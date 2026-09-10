@@ -314,6 +314,18 @@ button:focus-visible {
   color: #8a8da0;
 }
 
+.special-message {
+  margin-top: 22px;
+
+  font-size: 0.98rem;
+
+  color: #03542d;
+
+  background: rgba(220, 220, 220, 0.95);
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+
 /* ------------------------------------------------------------
    FOOTER
    ------------------------------------------------------------ */
