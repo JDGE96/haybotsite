@@ -319,9 +319,9 @@ button:focus-visible {
 
   font-size: 0.98rem;
 
-  color: #f8f8f8;
+  color: rgba(234, 235, 236, 1);
 
-  background: rgba(18, 53, 36, 0.95);
+  background: rgba(18, 53, 36, 0.75);
   padding: 10px 18px;
   border-radius: 10px;
 }
