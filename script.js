@@ -52,7 +52,11 @@ const photos = [
   "photos/BabyDriver.jpg",
   "photos/fnaf.jpg",
   "photos/fox1.jpg",
+  "photos/fox3.jpg",
+  "photos/fox2.jpg",
   "photos/stardewvalley.jpeg",
+  "photos/stardewvalley3.png",
+  "photos/stardewvalley4.png",
   "photos/CobraKai.jpg",
   "photos/HIMYM1.jpg",
   "photos/HIMYM2.jpg",
@@ -60,6 +64,8 @@ const photos = [
   "photos/HIMYM4.jpg",
   "photos/JohnWick.jpg",
   "photos/ST.jpg",
+  "photos/brz1.jpg",
+  "photos/challenger1.jpg",
 
   // Add your own photos here:
   // "photos/sunset.jpg",
