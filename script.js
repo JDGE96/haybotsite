@@ -490,6 +490,14 @@ const messages = [
   },
 
   {
+    category: "CHIN UP",
+    emoji: "🪏",
+    text: "If you ever get tired of everythign, just remember",
+    subtext: "That thats too damn bad and you better KEEP DIGGING"
+
+  },
+
+  {
     category: "A VISTOR",
     emoji: "😾",
     text: "YOU HAVE SOMEONE VISITING",
