@@ -739,6 +739,73 @@ function showMessage() {
   card.classList.add("pop");
 }
 
+/*============================================================
+   NOTE BOX — sends a message to your Discord channel
+   ============================================================
+
+   This uses a Discord "webhook" URL. Anyone who views this
+   page's source code can see the URL below, so treat it like
+   a low-security shortcut, not a secret. If it's ever misused,
+   just delete/regenerate the webhook in Discord and paste the
+   new URL in here.
+   ============================================================ */
+
+const discordWebhookUrl =
+  "https://discord.com/api/webhooks/1549257705129119775/dkYM5V_fp3r__4LEZEGNT16artlKExHK73J28znxm-KcEMWk7SnastTin1CXI9Tzin6Z";
+
+
+function sendNoteToDiscord() {
+
+  const input = document.getElementById("discordnoteInput");
+  const status = document.getElementById("discordnoteStatus");
+  const button = document.getElementById("discordnoteSendBtn");
+
+  const noteText = input.value.trim();
+
+  if (noteText.length === 0) {
+    status.textContent = "Type something first 🙂";
+    return;
+  }
+
+  button.disabled = true;
+  status.textContent = "Sending...";
+
+  fetch(discordWebhookUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      content: noteText,
+    }),
+  })
+    .then((response) => {
+
+      if (response.ok) {
+        status.textContent = "Sent 💌";
+        input.value = "";
+      }
+
+      else {
+        status.textContent = "Something went wrong. Try again?";
+      }
+    })
+    .catch(() => {
+      status.textContent = "Something went wrong. Try again?";
+    })
+    .finally(() => {
+      button.disabled = false;
+    });
+}
+
+
+document
+  .getElementById("discordnoteSendBtn")
+  .addEventListener(
+    "click",
+    sendNoteToDiscord
+  );
+
 
 /* ============================================================
    10. BUTTON

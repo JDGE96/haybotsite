@@ -326,6 +326,71 @@ button:focus-visible {
   border-radius: 10px;
 }
 
+.discordnote-box {
+  width: min(420px, 100%);
+  margin: 22px auto 0;
+  padding: 18px 20px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 18px;
+}
+
+.discordnote-label {
+  font-size: 0.85rem;
+  color: #4a4e63;
+  margin: 0 0 10px;
+}
+
+.discordnote-input {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #20243a;
+  border: 1px solid rgba(102, 126, 234, 0.35);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.discordnote-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.discordnote-send-button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+.discordnote-send-button:hover {
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.discordnote-send-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+  box-shadow: none;
+}
+
+.discordnote-status {
+  margin: 10px 0 0;
+  font-size: 0.8rem;
+  color: #4a4e63;
+  min-height: 1.1em;
+}
+
+
+
 /* ------------------------------------------------------------
    FOOTER
    ------------------------------------------------------------ */
