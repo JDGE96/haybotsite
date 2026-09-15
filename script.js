@@ -763,7 +763,7 @@ function sendNoteToDiscord() {
   const noteText = input.value.trim();
 
   if (noteText.length === 0) {
-    status.textContent = "Type something first 🙂";
+    status.textContent = "Please Type something";
     return;
   }
 
@@ -782,7 +782,7 @@ function sendNoteToDiscord() {
     .then((response) => {
 
       if (response.ok) {
-        status.textContent = "Sent 💌";
+        status.textContent = "Sent";
         input.value = "";
       }
 

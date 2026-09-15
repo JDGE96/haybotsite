@@ -329,12 +329,12 @@ button:focus-visible {
 .discordnote-box {
   width: min(420px, 100%);
   margin: 22px auto 0;
-  padding: 18px 20px;
+  padding: 14px 16px;
   text-align: center;
 
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 18px;
+  border-radius: 15px;
 }
 
 .discordnote-label {
@@ -346,7 +346,7 @@ button:focus-visible {
 .discordnote-input {
   width: 100%;
   resize: vertical;
-  padding: 10px 12px;
+  padding: 8px 12px;
   font-family: inherit;
   font-size: 0.9rem;
   color: #20243a;
@@ -363,12 +363,12 @@ button:focus-visible {
 .discordnote-send-button {
   margin-top: 10px;
   padding: 8px 20px;
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   border: none;
   border-radius: 999px;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #667eea, #4ba26f);
   box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
 }
 
