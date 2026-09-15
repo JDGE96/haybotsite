@@ -506,6 +506,22 @@ const messages = [
   },
 
   {
+    category: "COULD BE WORSE",
+    emoji: "🛩️",
+    text: "Keep your head up girl",
+    subtext: "At least TSA didnt take your claws away!"
+
+  },
+
+  {
+    category: "DONT DO THIS",
+    emoji: "🚂",
+    text: "Do NOT say you like trains out loud",
+    subtext: "One could just come out and hit you!"
+
+  },
+
+  {
     category: "A LAUGH",
     emoji: "🚗",
     text: "Keep today happy!",
