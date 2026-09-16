@@ -539,6 +539,14 @@ const messages = [
   }, 
   
   {
+    category: "SING ALONG",
+    emoji: "🎵",
+    text: "LA LA LA",
+    subtext: "Whatever. Its Doesnt Matter. Oh Well"
+
+  }, 
+
+  {
     category: "YOU CAN DO IT",
     emoji: "🏒",
     text: "Just know it is always possible, you can do it",
