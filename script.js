@@ -166,6 +166,15 @@ const spotifyTracks = [
     url: "https://open.spotify.com/track/2UXnpMyr1l7OixcCtT6dJK?si=75ef198bdd04454b"
   },
 
+
+/* SWEENEY TODD */
+
+  {
+    title: "Pretty Women",
+    artist: "Sweeny Todd Soundtrack",
+    url: "https://open.spotify.com/track/4X4ZHPOgp5DLh3tYZD5YYU?si=06b5cd424f764903"
+  },
+
 /* BADFLOWER */
 
 
