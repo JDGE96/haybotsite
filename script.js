@@ -547,6 +547,15 @@ const messages = [
   }, 
 
   {
+    category: "LEGENDARY",
+    emoji: "🎵",
+    text: "WE ARE INTERNATIONAL BUSINESSMEN",
+    subtext: "WE DO NOT WANT TO MISS OUR INTERNATIONAL BUSINESS MEETING"
+
+  }, 
+
+
+  {
     category: "YOU CAN DO IT",
     emoji: "🏒",
     text: "Just know it is always possible, you can do it",
@@ -787,43 +796,125 @@ const discordWebhookUrl =
   "https://discord.com/api/webhooks/1549257705129119775/dkYM5V_fp3r__4LEZEGNT16artlKExHK73J28znxm-KcEMWk7SnastTin1CXI9Tzin6Z";
 
 
+/*
+   Discord's normal (non-boosted) webhook upload limit is
+   around 10MB per file. We check against that on this end
+   so people get a friendly message instead of a silent
+   failure if their video is too big.
+*/
+const maxAttachmentBytes = 10 * 1024 * 1024;
+
+
+/*
+   Show the picked file's name under the attach link, so
+   people know it actually got selected.
+*/
+document
+  .getElementById("discordnoteFileInput")
+  .addEventListener("change", () => {
+
+    const fileInput = document.getElementById("discordnoteFileInput");
+    const fileNameDisplay = document.getElementById("discordnoteFileName");
+
+    const file = fileInput.files[0];
+
+    if (!file) {
+      fileNameDisplay.textContent = "";
+      return;
+    }
+
+    if (file.size > maxAttachmentBytes) {
+      fileNameDisplay.textContent =
+        "That file's too big (limit ~10MB). Pick a smaller one.";
+      fileInput.value = "";
+      return;
+    }
+
+    fileNameDisplay.textContent = "Attached: " + file.name;
+  });
+
+
 function sendNoteToDiscord() {
 
   const input = document.getElementById("discordnoteInput");
   const status = document.getElementById("discordnoteStatus");
   const button = document.getElementById("discordnoteSendBtn");
+  const fileInput = document.getElementById("discordnoteFileInput");
+  const fileNameDisplay = document.getElementById("discordnoteFileName");
 
   const noteText = input.value.trim();
+  const file = fileInput.files[0];
 
-  if (noteText.length === 0) {
-    status.textContent = "Please Type something";
+  if (noteText.length === 0 && !file) {
+    status.textContent = "Please type something or attach a file";
     return;
   }
 
   button.disabled = true;
   status.textContent = "Sending...";
 
-  fetch(discordWebhookUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      content: noteText,
-    }),
-  })
+  let fetchOptions;
+
+  if (file) {
+
+    /*
+       When sending a file, Discord webhooks want a
+       multipart form instead of plain JSON. "payload_json"
+       carries the text, "files[0]" carries the attachment.
+    */
+    const formData = new FormData();
+
+    formData.append(
+      "payload_json",
+      JSON.stringify({ content: noteText })
+    );
+
+    formData.append("files[0]", file, file.name);
+
+    fetchOptions = {
+      method: "POST",
+      body: formData,
+    };
+  }
+
+  else {
+
+    fetchOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        content: noteText,
+      }),
+    };
+  }
+
+  fetch(discordWebhookUrl, fetchOptions)
     .then((response) => {
 
       if (response.ok) {
         status.textContent = "Sent";
         input.value = "";
+        fileInput.value = "";
+        fileNameDisplay.textContent = "";
       }
 
       else {
+        /*
+           Log the actual reason to the console (F12 → Console)
+           so it's easy to see WHY a send failed instead of just
+           knowing that it did.
+        */
+        response.text().then((text) => {
+          console.error("Discord webhook error:", response.status, text);
+        });
+
         status.textContent = "Something went wrong. Try again?";
       }
     })
-    .catch(() => {
+    .catch((error) => {
+      console.error("Discord webhook fetch failed:", error);
       status.textContent = "Something went wrong. Try again?";
     })
     .finally(() => {

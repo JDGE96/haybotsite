@@ -360,6 +360,26 @@ button:focus-visible {
   border-color: #667eea;
 }
 
+.discordnote-file-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: #667eea;
+  cursor: pointer;
+}
+
+.discordnote-file-input {
+  display: none;
+}
+
+.discordnote-file-name {
+  margin: 6px 0 0;
+  font-size: 0.75rem;
+  color: #4a4e63;
+  min-height: 1.1em;
+  word-break: break-all;
+}
+
 .discordnote-send-button {
   margin-top: 10px;
   padding: 8px 20px;

@@ -89,6 +89,19 @@
         placeholder="Type something here..."
       ></textarea>
 
+      <label for="discordnoteFileInput" class="discordnote-file-label">
+        📎 Send a photo/video (optional)
+      </label>
+
+      <input
+        type="file"
+        id="discordnoteFileInput"
+        class="discordnote-file-input"
+        accept="image/*,video/*"
+      >
+
+      <p id="discordnoteFileName" class="discordnote-file-name"></p>
+
       <button id="discordnoteSendBtn" type="button" class="discordnote-send-button">
         Send
       </button>
