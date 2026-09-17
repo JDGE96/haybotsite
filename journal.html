@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#667eea">
+  <title>📓 A Journal Entry</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    This page reuses style.css from the main site so the
+    colors/fonts match, plus a few extra rules just for
+    the journal text below.
+  -->
+  <style>
+    .journal-wrap {
+      width: min(680px, 100%);
+      margin: 0 auto;
+      padding: clamp(30px, 6vw, 60px) clamp(22px, 6vw, 50px);
+    }
+
+    .journal-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      border-radius: 24px;
+      padding: clamp(28px, 6vw, 50px);
+      box-shadow: 0 20px 45px rgba(35, 40, 70, 0.15);
+    }
+
+    .journal-date {
+      font-size: 0.8rem;
+      color: #8a8da0;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .journal-text {
+      white-space: pre-wrap;   /* keeps your line breaks/paragraphs as typed */
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #2b2f45;
+      text-align: left;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Same background layer as the main page -->
+  <div id="background" class="background" aria-hidden="true"
+       style="background-image: url('photos/default.jpg');"></div>
+  <div class="background-overlay" aria-hidden="true"></div>
+
+  <main class="app">
+    <div class="journal-wrap">
+
+      <div class="journal-card">
+
+        <!--
+          Optional: put a date or title here.
+          Just delete this line if you don't want one.
+        -->
+        <div class="journal-date">Sometime in 2026</div>
+
+        <!--
+          ===============================================
+          PASTE YOUR JOURNAL ENTRY BELOW
+          ===============================================
+          Just type or paste it right here, between the
+          <div> tags. Leave blank lines between paragraphs
+          if you want spacing between them — they'll show
+          up the same way you typed them.
+        -->
+        <div class="journal-text">Paste your journal entry here.
+
+It can be as long as you want — this box will just keep growing.
+
+Leave a blank line like this to start a new paragraph.</div>
+
+      </div>
+
+      <a class="back-link" href="index.html">&larr; Back</a>
+
+    </div>
+  </main>
+
+</body>
+</html>
