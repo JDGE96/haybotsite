@@ -81,8 +81,8 @@ const photos = [
 // ==========================================
 
 const specialMessage = {
-  title: "A message from Wolf 🐺",
-  message: "I may not be around, but im there with you, in this card, always. Probably listening to 🎵The Walker🎵"
+  title: "Empty Message",
+  message: "N/A"
 };
 
 /* ============================================================
