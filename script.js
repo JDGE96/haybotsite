@@ -81,8 +81,8 @@ const photos = [
 // ==========================================
 
 const specialMessage = {
-  title: "Empty Message",
-  message: "N/A"
+  title: "🦊Message🐺",
+  message: "I love you, and im Sorry"
 };
 
 /* ============================================================
