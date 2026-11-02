@@ -82,7 +82,7 @@ const photos = [
 
 const specialMessage = {
   title: "🦊Message🐺",
-  message: "I love you, and im Sorry"
+  message: "Happy 7 years of knowing you"
 };
 
 /* ============================================================
