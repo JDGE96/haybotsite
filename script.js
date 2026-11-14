@@ -22,7 +22,7 @@
 */
 
 // Replace this with a newly generated Discord webhook URL.
-const discordWebhookUrl = "https://discord.com/api/webhooks/1549257705129119775/dkYM5V_fp3r__4LEZEGNT16artlKExHK73J28znxm-KcEMWk7SnastTin1CXI9Tzin6Z";
+const discordWebhookUrl = "https://discord.com/api/webhooks/1571230803856461895/0xDc1DWMNvyxTHMyvnv7qfvGWDd-9XTe5sEzIGsHOk--2_HA5Bgpr4PjVPxf6pIYGOGI";
 
 const maxAttachmentBytes = 10 * 1024 * 1024;
 
@@ -69,7 +69,7 @@ async function sendNoteToDiscord() {
 
   if (
     !discordWebhookUrl ||
-    discordWebhookUrl === "https://discord.com/api/webhooks/1549257705129119775/dkYM5V_fp3r__4LEZEGNT16artlKExHK73J28znxm-KcEMWk7SnastTin1CXI9Tzin6Z"
+    discordWebhookUrl === "https://discord.com/api/webhooks/1571230803856461895/0xDc1DWMNvyxTHMyvnv7qfvGWDd-9XTe5sEzIGsHOk--2_HA5Bgpr4PjVPxf6pIYGOGI"
   ) {
     status.textContent = "Add your new Discord webhook URL in the JavaScript first.";
     return;
