@@ -1,20 +1,19 @@
 /*
   ============================================================
-  HAYLEA PICK-ME-UP — STYLE SHEET
+  HAYLEA PAGE — SIMPLIFIED STYLE SHEET
   ============================================================
 
-  This is where you change how the website LOOKS.
+  Active features:
+    - Letter / journal link
+    - Discord message box
+    - Optional file attachment
 
-  Want a different background?
-  Change the .background section below.
-
-  Want a darker card?
-  Change .card.
-
-  Want different button colors?
-  Change button.
-
-  Don't be afraid to experiment. CSS is very forgiving.
+  Removed:
+    - Rotating photo backgrounds
+    - Inspirational messages
+    - Spotify features
+    - Special message cards
+    - Decorative animations
   ============================================================
 */
 
@@ -32,8 +31,8 @@
     "Segoe UI",
     sans-serif;
 
-  color: #20243a;
-  background: #eef1ff;
+  color: #303344;
+  background: #eef0f5;
 }
 
 /* ------------------------------------------------------------
@@ -44,58 +43,13 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-}
-
-/* ------------------------------------------------------------
-   ROTATING PHOTO BACKGROUND
-   ------------------------------------------------------------ */
-
-.background {
-  position: fixed;
-  inset: 0;
-  z-index: -3;
-
-  background-image: url("photos/default.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  /*
-    JavaScript changes this background image.
-
-    The transition makes the photo fade rather than suddenly
-    switching.
-  */
-  transition: opacity 0.7s ease, transform 1.2s ease;
-
-  transform: scale(1.02);
-}
-
-/*
-  This dark/soft layer sits over the photograph.
-
-  Increase the last number in rgba() if you want the photo
-  darker.
-
-  Example:
-    rgba(20, 25, 50, 0.65)
-
-  Less:
-    rgba(20, 25, 50, 0.25)
-*/
-.background-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: -2;
 
   background:
     linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.45),
-      rgba(230, 235, 255, 0.65)
+      #eef0f5,
+      #e5e8f0
     );
-
-  backdrop-filter: blur(2px);
 }
 
 /* ------------------------------------------------------------
@@ -114,258 +68,145 @@ body {
 }
 
 /* ------------------------------------------------------------
-   LITTLE DECORATION
-   ------------------------------------------------------------ */
-
-.sparkles {
-  color: rgba(86, 99, 180, 0.75);
-
-  letter-spacing: 8px;
-  margin-bottom: 12px;
-
-  animation: float 3s ease-in-out infinite;
-}
-
-/* ------------------------------------------------------------
-   MESSAGE CARD
+   MAIN CARD
    ------------------------------------------------------------ */
 
 .card {
-  width: min(680px, 100%);
+  width: min(580px, 100%);
 
   padding:
-    clamp(34px, 7vw, 70px)
-    clamp(25px, 7vw, 65px);
+    clamp(28px, 6vw, 50px)
+    clamp(22px, 6vw, 45px);
 
   text-align: center;
 
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 22px;
 
-  border-radius: 30px;
-
-  /*
-    This is the glass effect.
-
-    Want more transparent?
-      rgba(255,255,255,.55)
-
-    Want more solid?
-      rgba(255,255,255,.90)
-  */
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.88);
 
   box-shadow:
-    0 25px 70px
-    rgba(63, 73, 130, 0.25);
-
-  backdrop-filter: blur(16px);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-/* Animation applied when a new message appears */
-.card.pop {
-  animation: pop 0.38s ease;
+    0 15px 45px
+    rgba(40, 45, 75, 0.10);
 }
 
 /* ------------------------------------------------------------
-   TEXT
+   LETTER / JOURNAL LINK
    ------------------------------------------------------------ */
 
-.tiny-label {
-  text-transform: uppercase;
+.letter-link {
+  display: inline-block;
 
-  letter-spacing: 3px;
-
-  font-size: 0.72rem;
-  font-weight: 700;
-
-  color: #727aa6;
-}
-
-.emoji {
-  font-size: 3.3rem;
-  margin: 20px 0 8px;
-}
-
-.category {
-  margin: 0;
-
-  font-size: 0.75rem;
-  font-weight: 800;
-
-  letter-spacing: 2px;
-
-  color: #6870a5;
-}
-
-h1 {
-  margin: 20px auto 16px;
-
-  max-width: 570px;
-
-  font-size:
-    clamp(1.65rem, 5vw, 2.65rem);
-
-  line-height: 1.2;
-
-  font-weight: 750;
-}
-
-.subtext {
-  margin:
-    0 auto
-    30px;
-
-  max-width: 510px;
-
-  color: #666b82;
-
-  line-height: 1.6;
-
-  font-size: 1rem;
-}
-
-/* ------------------------------------------------------------
-   BUTTON
-   ------------------------------------------------------------ */
-
-button {
-  border: 0;
+  margin: 0 auto 24px;
+  padding: 12px 22px;
 
   border-radius: 999px;
 
-  padding:
-    14px
-    23px;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #8172c9);
 
-  font: inherit;
-
-  font-weight: 750;
-
-  color: white;
-
-  background:
-    linear-gradient(
-      135deg,
-      #667eea,
-      #8b72d9
-    );
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
 
   box-shadow:
-    0 9px 25px
-    rgba(102, 126, 234, 0.3);
-
-  cursor: pointer;
+    0 6px 16px
+    rgba(102, 126, 234, 0.20);
 
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease;
 }
 
-button:hover {
+.letter-link:hover {
   transform: translateY(-2px);
 
   box-shadow:
-    0 12px 30px
-    rgba(102, 126, 234, 0.38);
+    0 9px 22px
+    rgba(102, 126, 234, 0.30);
 }
 
-button:active {
-  transform: translateY(0);
-}
-
-button:focus-visible {
-  outline:
-    3px solid
-    rgba(102, 126, 234, 0.4);
-
+.letter-link:focus-visible {
+  outline: 3px solid rgba(102, 126, 234, 0.4);
   outline-offset: 4px;
 }
 
-.spotify-button {
-  margin-top: 12px;
-  background: linear-gradient(135deg, #1db954, #159447);
-  box-shadow: 0 9px 25px rgba(29, 185, 84, 0.25);
-}
-
-.spotify-button:hover {
-  box-shadow: 0 12px 30px rgba(29, 185, 84, 0.34);
-}
-
-.spotify-result {
-  margin: 14px auto 0;
-  max-width: 560px;
-  color: #596078;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  min-height: 1.4em;
-}
-
-.hint {
-  margin-top: 18px;
-
-  font-size: 0.78rem;
-
-  color: #8a8da0;
-}
-
-.special-message {
-  margin-top: 20px;
-
-  font-size: 0.68rem;
-
-  color: rgba(234, 235, 236, 1);
-
-  background: rgba(18, 53, 36, 0.75);
-  padding: 10px 18px;
-  border-radius: 10px;
-}
+/* ------------------------------------------------------------
+   DISCORD MESSAGE BOX
+   ------------------------------------------------------------ */
 
 .discordnote-box {
-  width: min(420px, 100%);
-  margin: 22px auto 0;
-  padding: 14px 16px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px;
+
   text-align: center;
 
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
+  background: #f5f6fa;
+
+  border: 1px solid #e3e5ed;
+  border-radius: 16px;
 }
 
 .discordnote-label {
-  font-size: 0.85rem;
-  color: #4a4e63;
-  margin: 0 0 10px;
+  font-size: 0.9rem;
+  font-weight: 650;
+
+  color: #45495d;
+
+  margin: 0 0 12px;
 }
 
 .discordnote-input {
+  display: block;
+
   width: 100%;
+  min-height: 100px;
+
   resize: vertical;
-  padding: 8px 12px;
+
+  padding: 12px 14px;
+
   font-family: inherit;
   font-size: 0.9rem;
-  color: #20243a;
-  border: 1px solid rgba(102, 126, 234, 0.35);
+  line-height: 1.5;
+
+  color: #303344;
+
+  border: 1px solid #d9dce8;
   border-radius: 12px;
+
   background: #fff;
 }
 
 .discordnote-input:focus {
   outline: none;
   border-color: #667eea;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(102, 126, 234, 0.12);
 }
+
+/* ------------------------------------------------------------
+   FILE ATTACHMENT
+   ------------------------------------------------------------ */
 
 .discordnote-file-label {
   display: block;
-  margin-top: 10px;
-  font-size: 0.78rem;
+
+  margin-top: 14px;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
   color: #667eea;
+
   cursor: pointer;
+}
+
+.discordnote-file-label:hover {
+  color: #4e5fc2;
 }
 
 .discordnote-file-input {
@@ -373,43 +214,91 @@ button:focus-visible {
 }
 
 .discordnote-file-name {
-  margin: 6px 0 0;
-  font-size: 0.75rem;
-  color: #4a4e63;
+  margin: 8px 0 0;
+
+  font-size: 0.78rem;
+
+  color: #666b7d;
+
   min-height: 1.1em;
+
   word-break: break-all;
 }
 
+/* ------------------------------------------------------------
+   SEND BUTTON
+   ------------------------------------------------------------ */
+
 .discordnote-send-button {
-  margin-top: 10px;
-  padding: 8px 20px;
-  font-size: 0.65rem;
+  margin-top: 14px;
+
+  padding: 11px 24px;
+
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+
   border: none;
   border-radius: 999px;
+
   cursor: pointer;
+
   color: #fff;
-  background: linear-gradient(135deg, #667eea, #4ba26f);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+
+  background:
+    linear-gradient(
+      135deg,
+      #667eea,
+      #8172c9
+    );
+
+  box-shadow:
+    0 6px 16px
+    rgba(102, 126, 234, 0.22);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .discordnote-send-button:hover {
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px
+    rgba(102, 126, 234, 0.30);
+}
+
+.discordnote-send-button:active {
+  transform: translateY(0);
 }
 
 .discordnote-send-button:disabled {
-  opacity: 0.6;
-  cursor: default;
+  opacity: 0.55;
+  cursor: not-allowed;
+
+  transform: none;
   box-shadow: none;
 }
 
-.discordnote-status {
-  margin: 10px 0 0;
-  font-size: 0.8rem;
-  color: #4a4e63;
-  min-height: 1.1em;
+.discordnote-send-button:focus-visible {
+  outline: 3px solid rgba(102, 126, 234, 0.4);
+  outline-offset: 4px;
 }
 
+/* ------------------------------------------------------------
+   STATUS MESSAGE
+   ------------------------------------------------------------ */
 
+.discordnote-status {
+  margin: 12px 0 0;
+
+  font-size: 0.82rem;
+
+  color: #555b70;
+
+  min-height: 1.2em;
+}
 
 /* ------------------------------------------------------------
    FOOTER
@@ -418,42 +307,11 @@ button:focus-visible {
 footer {
   margin-top: 18px;
 
-  color: #777c98;
+  color: #85899a;
 
   font-size: 0.75rem;
 
   text-align: center;
-  
-  background: rgba(220, 220, 220, 0.95);
-  padding: 12px 20px;
-  border-radius: 12px;
-}
-
-/* ------------------------------------------------------------
-   ANIMATIONS
-   ------------------------------------------------------------ */
-
-@keyframes pop {
-  0% {
-    opacity: 0.35;
-    transform: scale(0.98);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-5px);
-  }
 }
 
 /* ------------------------------------------------------------
@@ -466,16 +324,24 @@ footer {
   }
 
   .card {
-    border-radius: 24px;
+    padding: 25px 18px;
+    border-radius: 18px;
+  }
+
+  .discordnote-box {
+    padding: 14px;
   }
 }
 
-/* Respect people who prefer reduced motion */
+/* ------------------------------------------------------------
+   ACCESSIBILITY
+   ------------------------------------------------------------ */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
-    animation: none !important;
     transition: none !important;
+    animation: none !important;
   }
 }
