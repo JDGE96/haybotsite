@@ -67,11 +67,8 @@ async function sendNoteToDiscord() {
     return;
   }
 
-if (
-  !discordWebhookUrl ||
-  discordWebhookUrl === "https://discord.com/api/webhooks/1571231824984678533/uEWnNbI-VbLE9OsWdzlqI5OAOhsyroDUT_tn205SDI28LClANtGBKPIBa9XFHhiVFfBX"
-) {
-  status.textContent = "Add your new Discord webhook URL in the JavaScript first.";
+if (!discordWebhookUrl || !discordWebhookUrl.startsWith("https://discord.com/api/webhooks/")) {
+  status.textContent = "Webhook URL is missing or incorrectly formatted.";
   return;
 }
 
