@@ -22,7 +22,7 @@
 */
 
 // Replace this with a newly generated Discord webhook URL.
-const discordWebhookUrl = "https://discord.com/api/webhooks/1571231824984678533/uEWnNbI-VbLE9OsWdzlqI5OAOhsyroDUT_tn205SDI28LClANtGBKPIBa9XFHhiVFfBX";
+const discordWebhookUrl = "https://discord.com/api/webhooks/1572787457420951722/cvH7I_yJXdTE1-igfnmy8UplR6kddJS32RhFYW9MJ8HUf1TKfIMjFvVXShgr5wVnyDBq";
 
 const maxAttachmentBytes = 10 * 1024 * 1024;
 
